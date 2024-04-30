@@ -1,0 +1,22 @@
+
+/*Charte Graphique: 
+Polices d'écriture:
+- Satisfy pour les titres 
+- Lato pour les textes 
+
+Couleurs: 
+- blanc: F4F4F4
+- noir : 323232
+- rose: FDD4E2
+- bleu: 9BF3FE
+*/
+
+
+.container1200{
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+
