@@ -19,17 +19,53 @@ Couleurs:
     margin: auto;
 }
 
+/* stylisation des hovers */
+
+.team-section__social-media--hover:hover,
+.footer-section__social-media--hover:hover {
+    background-color: aqua;
+}
+
+.footer-section__contacts--hover:hover{
+    background-color: aqua;
+}
+
+.links-section__item--hover:hover{
+    background-color: aqua;
+}
+
+.navigation-bar-pc__item--hover:hover{
+    background-color: aqua;
+}
+
 /* Barre de navigation */
 
 .navigation-bar-pc{
     display: flex;
     background-color: aquamarine;
+    align-items: center;
+ 
+  
 }
 
 .navigation-bar-pc__logo{
     width: 30%;
     background-color: blue;
 }
+
+.navigation-bar-pc__menu{
+    display: flex;
+    list-style-type: none;
+    width: 150%;
+    justify-content: space-around
+}
+
+.navigation-bar-pc__item{
+    display: flex;
+    text-decoration: none;
+}
+
+
 
 
 /* Section produits */
@@ -114,17 +150,25 @@ Couleurs:
     justify-content: center;
 }
 
+.links-section__item {
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+}
+
 /* Section footer */
 
 .footer-section{
     background-color: rgb(245, 152, 217);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .footer-section__website-creator{
     background-color: aqua;
-    margin-left: 30px;
+    margin-left: 10px;
+
 }
 
 .footer-section__social-media{
@@ -132,8 +176,25 @@ Couleurs:
  
 }
 
-.footer-section__contacts{
-    background-color: aquamarine;
-    margin-right: 30px;
+.footer-section__icon{
+    width: 18%;
+    margin-right: 10px;
 }
 
+.footer-section__container-contacts{
+    background-color: aquamarine;
+    display: flex;
+    text-align: center;
+    width: 35%;
+    padding: 15px;
+    margin: 10px;
+}
+
+.footer-section__contacts{
+    display: flex; 
+}
+
+.footer-section__contacts{
+    text-decoration: none;
+    color: black;
+}

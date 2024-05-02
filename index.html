@@ -27,12 +27,12 @@
         <div class="navigation-bar-pc">
             <a href="index.html"><img class="navigation-bar-pc__logo" src="images/glazed-glory-logo.png"
                     alt="logo de Glazed Glory Donuts"></a>
-            <nav class="navigation-bar-pc__menu">
-                <ul>
-                    <li><a class="navigation-bar-pc__item" href="#">Nos produits</a></li>
-                    <li><a class="navigation-bar-pc__item" href="#">Notre histoire</a></li>
-                    <li><a class="navigation-bar-pc__item" href="#">Notre équipe</a></li>
-                    <li><a class="navigation-bar-pc__item" href="#">Contactez-nous</a></li>
+            <nav>
+                <ul class="navigation-bar-pc__menu">
+                    <li><a class="navigation-bar-pc__item navigation-bar-pc__item--hover" href="#products">Nos produits</a></li>
+                    <li><a class="navigation-bar-pc__item navigation-bar-pc__item--hover" href="#story">Notre histoire</a></li>
+                    <li><a class="navigation-bar-pc__item navigation-bar-pc__item--hover" href="#team">Notre équipe</a></li>
+                    <li><a class="navigation-bar-pc__item navigation-bar-pc__item--hover" href="#contact">Contactez-nous</a></li>
                 </ul>
             </nav>
         </div>
@@ -60,7 +60,7 @@
         </div>
 
         <main>
-            <div>
+            <div id="products">
                 <h1>Découvres nos donuts colorés! 🍩</h1>
                 <p>Préparés selon nos recettes véganes et avec des ingrédients 100% québecois</p>
 
@@ -106,7 +106,7 @@
 
             </div>
 
-            <div class="statistics-section">
+            <div class="statistics-section" id="story">
                 <div class="statistics-section__image-container">
                     <img class="statistics-section__image" src="images/statistiques.png"
                         alt="statistiques sur la composition de nos donuts">
@@ -120,7 +120,7 @@
                 </div>
             </div>
 
-            <div>
+            <div id="team">
                 <h3>Découvres notre équipe de feu! 🔥</h3>
                 <p>lorem ipsum blablabla</p>
 
@@ -137,9 +137,12 @@
                             <p>blablablabla</p>
                         </div>
                         <div>
-                            <img src="images/facebook-icon.png" alt="facebook">
-                            <img src="images/x-icon.png" alt="Twitter-X">
-                            <img src="images/instagram-icon.png" alt="instagram">
+                            <a href="#"><img class="team-section__social-media--hover" src="images/facebook-icon.png"
+                                    alt="facebook"></a>
+                            <a href="#"><img class="team-section__social-media--hover" src="images/x-icon.png"
+                                    alt="Twitter-X"></a>
+                            <a href="#"><img class="team-section__social-media--hover" src="images/instagram-icon.png"
+                                    alt="instagram"></a>
                         </div>
                     </div>
 
@@ -154,9 +157,12 @@
                             <p>blablablabla</p>
                         </div>
                         <div>
-                            <img src="images/facebook-icon.png" alt="facebook">
-                            <img src="images/x-icon.png" alt="Twitter-X">
-                            <img src="images/instagram-icon.png" alt="instagram">
+                            <a href="#"><img class="team-section__social-media--hover" src="images/facebook-icon.png"
+                                    alt="facebook"></a>
+                            <a href="#"><img class="team-section__social-media--hover" src="images/x-icon.png"
+                                    alt="Twitter-X"></a>
+                            <a href="#"><img class="team-section__social-media--hover" src="images/instagram-icon.png"
+                                    alt="instagram"></a>
                         </div>
                     </div>
 
@@ -171,9 +177,12 @@
                             <p>blablablabla</p>
                         </div>
                         <div>
-                            <img src="images/facebook-icon.png" alt="facebook">
-                            <img src="images/x-icon.png" alt="Twitter-X">
-                            <img src="images/instagram-icon.png" alt="instagram">
+                            <a href="#"><img class="team-section__social-media--hover" src="images/facebook-icon.png"
+                                    alt="facebook"></a>
+                            <a href="#"><img class="team-section__social-media--hover" src="images/x-icon.png"
+                                    alt="Twitter-X"></a>
+                            <a href="#"><img class="team-section__social-media--hover" src="images/instagram-icon.png"
+                                    alt="instagram"></a>
                         </div>
                     </div>
 
@@ -188,9 +197,12 @@
                             <p>blablablabla</p>
                         </div>
                         <div>
-                            <img src="images/facebook-icon.png" alt="facebook">
-                            <img src="images/x-icon.png" alt="Twitter-X">
-                            <img src="images/instagram-icon.png" alt="instagram">
+                            <a href="#"><img class="team-section__social-media--hover" src="images/facebook-icon.png"
+                                    alt="facebook"></a>
+                            <a href="#"><img class="team-section__social-media--hover" src="images/x-icon.png"
+                                    alt="Twitter-X"></a>
+                            <a href="#"><img class="team-section__social-media--hover" src="images/instagram-icon.png"
+                                    alt="instagram"></a>
                         </div>
                     </div>
 
@@ -213,34 +225,45 @@
 
         <div class="links-section">
             <div>
-                <img class="links-section__logo" src="images/glazed-glory-logo.png" alt="logo Glazed Glory">
+                <a href="index.html"><img class="links-section__logo" src="images/glazed-glory-logo.png"
+                        alt="logo Glazed Glory"></a>
             </div>
             <div>
                 <ul class="links-section__list">
-                    <li><a href="#">A propos de nous</a></li>
-                    <li><a href="#">Conditions de vente</a></li>
-                    <li><a href="#">Plan du site</a></li>
-                    <li><a href="#">Carrières</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Politique de confidentialité</a></li>
+                    <li><a class="links-section__item links-section__item--hover" href="#">A propos de nous</a></li>
+                    <li><a class="links-section__item links-section__item--hover" href="#">Conditions de vente</a></li>
+                    <li><a class="links-section__item links-section__item--hover" href="#">Plan du site</a></li>
+                    <li><a class="links-section__item links-section__item--hover" href="#">Carrières</a></li>
+                    <li><a class="links-section__item links-section__item--hover" href="#">FAQ</a></li>
+                    <li><a class="links-section__item links-section__item--hover" href="#">Politique de confidentialité</a></li>
                 </ul>
             </div>
         </div>
 
-        <footer>
+        <footer id="contact">
             <div class="footer-section">
                 <div class="footer-section__website-creator">
                     <p>Fait par : Maybelline Thillays</p>
                 </div>
                 <div class="footer-section__social-media">
-                    <img src="images/facebook-icon.png" alt="Facebook">
-                    <img src="images/linkedin-icon.png" alt="Linkedin">
-                    <img src="images/x-icon.png" alt="Twitter-X">
-                    <img src="images/instagram-icon.png" alt="Twitter-X">
+                    <a href="#"><img class="footer-section__social-media--hover" src="images/facebook-icon.png"
+                            alt="Facebook"></a>
+                    <a href="#"><img class="footer-section__social-media--hover" src="images/linkedin-icon.png"
+                            alt="Linkedin"></a>
+                    <a href="#"><img class="footer-section__social-media--hover" src="images/x-icon.png"
+                            alt="Twitter-X"></a>
+                    <a href="#"><img class="footer-section__social-media--hover" src="images/instagram-icon.png"
+                            alt="Twitter-X"></a>
                 </div>
-                <div class="footer-section__contacts">
-                    <img src="images/phone-icon.png" alt="téléphone">
-                    <img src="images/email-icon.png" alt="email">
+                <div class="footer-section__container-contacts">
+                    <div class="footer-section__contacts">
+                        <img class="footer-section__icon" src="images/phone-icon.png" alt="téléphone">
+                        <a class="footer-section__contacts footer-section__contacts--hover"href="tel:+15148559667"><p>514-855-9667</p></a>
+                    </div>
+                    <div class="footer-section__contacts">
+                        <img class="footer-section__icon" src="images/email-icon.png" alt="email">
+                        <a class="footer-section__contacts footer-section__contacts--hover" href="mailto:contact@glazedglory.com"><p>contact@glazedglory.com</p></a>
+                    </div>
                 </div>
             </div>
         </footer>
