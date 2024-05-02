@@ -17,6 +17,7 @@ Couleurs:
     display: flex;
     flex-direction: column;
     margin: auto;
+    background-color: rgb(248, 204, 230);
 }
 
 /* stylisation des hovers */
@@ -38,14 +39,21 @@ Couleurs:
     background-color: aqua;
 }
 
+
+.button__submit--hover:hover{
+    background-color: aqua;
+}
+
+
+
+
+
 /* Barre de navigation */
 
 .navigation-bar-pc{
     display: flex;
     background-color: aquamarine;
     align-items: center;
- 
-  
 }
 
 .navigation-bar-pc__logo{
@@ -63,6 +71,44 @@ Couleurs:
 .navigation-bar-pc__item{
     display: flex;
     text-decoration: none;
+}
+
+/* Section carroussel-bannière */
+
+.carousel-banner__image{
+    width: 100%;
+}
+
+
+/* Section newsletter */
+
+.newsletter-section{
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0em 1em 0em;
+    text-align: center;
+    background-color: rgb(105, 161, 161);
+}
+
+.newsletter-section__input-button{
+    background-color: rgb(134, 84, 24);
+    display: flex;
+    justify-content: center;
+    margin: 1em 0em 1em 0em;
+}
+
+.button__submit{
+    padding: 10px;
+    margin-left: 1em;
+}
+
+
+/* Section information */
+
+.information-section{
+    background-color: rgb(230, 121, 240);
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -85,12 +131,37 @@ Couleurs:
     width: 40%;
 }
 .products-section__image{
-    background-color: brown;
+    background-color: rgb(231, 180, 180);
     padding: 15px;
 }
 
 .products-section__paragraph{
     background-color: aquamarine;
+}
+
+
+/* Section grid d'images */
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .div1 { grid-area: 1 / 4 / 4 / 8; background-color: aqua;}
+    .div2 { grid-area: 4 / 6 / 7 / 10; background-color: aqua;}
+    .div3 { grid-area: 2 / 8 / 4 / 10; background-color: rgb(233, 233, 29);}
+    .div4 { grid-area: 4 / 4 / 6 / 6; background-color: blue;}
+    .div5 { grid-area: 2 / 1 / 5 / 4; background-color: blue;}
+    .div6 { grid-area: 3 / 10 / 6 / 12; background-color: rgb(17, 165, 54);}
+
+.bs{
+    grid-area: bs;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* Section présentation statistiques */
@@ -129,6 +200,64 @@ Couleurs:
     border-radius: 100px;
 }
 
+/* Section iframe de Google Map + formulaire */
+
+.contact-section{
+    background-color: rgb(236, 79, 166);
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Section Iframe Google Map */
+
+.contact-section__iframe{
+    display: flex;
+    width: 400%;
+}
+
+/* Section Formulaire */
+
+.form-section{
+    background-color: aquamarine;
+    width: 40%;
+    margin-right: 2em;
+}
+
+.form-section__paragraph{
+    margin: 2em 2em 0em 2em;
+}
+
+form{
+    background-color: rgb(220, 231, 56);
+    margin: 0em 2em 2em 2em;
+}
+
+.form-section__hidden--labels{
+    display: none;
+}
+
+.form-section__names{
+    background-color: bisque;
+    display: flex;
+}
+
+.form-section__first-name, .form-section__last-name{
+    background-color: black;
+    width: 100%;
+}
+
+.form-section__names input{
+    width: 95%;
+}
+
+.form-section__contact{
+    background-color: rgb(119, 119, 180);
+}
+
+.form-section__input, .form-section__textarea{
+    background-color: rgb(226, 80, 22);
+    width: 98%;
+}
 
 
 /* Section liste de liens */
