@@ -240,27 +240,31 @@
                     <p>Besoin d'informations au sujet de nos produits et services? Contactes-nous via ce formulaire ci-dessous:</p>
                 </div>
                 
-                <form action="">
+                <form id="form" action="confirmation.html" onsubmit="return validateForm()">
                     <div class="form-section__names">
-                        <div class="form-section__first-name">
+                        <div class="form-section__first-name input-control">
                             <label class="form-section__hidden--labels" for="first-name">Prénom:</label><br>
                             <input type="text" id="first-name" name="first-name" placeholder="prénom"><br>
+                            <div class="errorMessage"></div>
                         </div>
     
-                        <div class="form-section__last-name">
+                        <div class="form-section__last-name input-control">
                             <label class="form-section__hidden--labels" for="last-name">Nom:</label><br>
                             <input type="text" id="last-name" name="last-name" placeholder="nom de famille"><br>
+                            <div class="errorMessage"></div>
                         </div>
                     </div>
     
                     <div class="form-section__contact">
-                        <div>
+                        <div class="input-control">
                             <label class="form-section__hidden--labels" for="email">Courriel:</label><br>
                             <input class="form-section__input" type="email" id="email" name="email" placeholder="courriel"><br><br>
+                            <div class="errorMessage"></div>
                         </div>
     
                         <div>
                             <textarea class="form-section__textarea" name="comment" form="usrform" placeholder="message"></textarea><br><br>
+                            <div class="errorMessage"></div>
                         </div>
                     </div>
     
