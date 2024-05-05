@@ -1,15 +1,31 @@
 
 /*Charte Graphique: 
+
 Polices d'écriture:
 - Satisfy pour les titres 
 - Lato pour les textes 
+
+Taille police écriture:
 
 Couleurs: 
 - blanc: F4F4F4
 - noir : 323232
 - rose: FDD4E2
 - bleu: 9BF3FE
+
+
+
+
 */
+
+h1, h2, h3, h4{
+    font-family: satisfy;
+    font-size: 3.5em;
+}
+
+body{
+    font-family: lato;
+}
 
 /* classes CSS */
 
@@ -17,14 +33,23 @@ Couleurs:
     border-color: rgb(64, 187, 7);
 }
 
-.input-control.sucess input{
+.input-control.error input{
     border-color: rgb(236, 84, 57);
 }
 
-.input-control .errorMessage{
+.input-control .error{
     color: rgb(236, 84, 57);
-    font-size: 9px;
-    height: 13px;
+    font-size: 0.9em;
+    height: 20px;
+    background-color: aqua;
+}
+
+.input-control.sucess textarea {
+    border: 3px solid rgb(64, 187, 7);
+}
+
+.input-control.error textarea {
+    border: 3px solid rgb(236, 84, 57);
 }
 
 
@@ -34,7 +59,6 @@ Couleurs:
     display: flex;
     flex-direction: column;
     margin: auto;
-    background-color: rgb(248, 204, 230);
 }
 
 
@@ -75,7 +99,7 @@ Couleurs:
     align-items: center;
 }
 
-.navigation-bar-pc__logo{
+.navigation-bar__logo{
     width: 30%;
     background-color: blue;
 }
@@ -91,6 +115,12 @@ Couleurs:
     display: flex;
     text-decoration: none;
 }
+
+.navigation-bar-mobile{
+    display: none;
+}
+
+
 
 /* Section carroussel-bannière */
 
@@ -161,7 +191,7 @@ Couleurs:
 
 /* Section grid d'images */
 
-.parent {
+.parent-pc {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(6, 1fr);
@@ -183,12 +213,17 @@ Couleurs:
     object-fit: cover;
 }
 
+.parent-mobile{
+    display: none;
+}
+
+
 /* Section présentation statistiques */
 
 .statistics-section{
     display: flex;
     padding: 25px;
-    background-color: black;
+
 }
 
 .statistics-section__image-container{
@@ -197,7 +232,6 @@ Couleurs:
 }
 
 .statistics-section__text-container{
-    background-color: blueviolet;
     width: 55%;
 }
 
@@ -253,7 +287,7 @@ Couleurs:
 }
 
 form{
-    background-color: rgb(220, 231, 56);
+
     margin: 0em 2em 2em 2em;
 }
 
@@ -262,12 +296,10 @@ form{
 }
 
 .form-section__names{
-    background-color: bisque;
     display: flex;
 }
 
 .form-section__first-name, .form-section__last-name{
-    background-color: black;
     width: 100%;
 }
 
@@ -275,9 +307,7 @@ form{
     width: 95%;
 }
 
-.form-section__contact{
-    background-color: rgb(119, 119, 180);
-}
+
 
 .form-section__input, .form-section__textarea{
     width: 98%;
@@ -326,15 +356,9 @@ textarea{
 }
 
 .footer-section__website-creator{
-    background-color: aqua;
     margin-left: 10px;
-
 }
 
-.footer-section__social-media{
-    background-color: blueviolet;
- 
-}
 
 .footer-section__icon{
     width: 18%;
@@ -342,7 +366,6 @@ textarea{
 }
 
 .footer-section__container-contacts{
-    background-color: aquamarine;
     display: flex;
     text-align: center;
     width: 35%;
@@ -357,4 +380,132 @@ textarea{
 .footer-section__contacts{
     text-decoration: none;
     color: black;
+}
+
+
+/*-- MEDIA QUERIES --*/
+
+/* Mobiles et Tablettes */
+
+
+@media (min-width:981px) and (max-width:1200px) {
+
+    .navigation-bar-pc{
+        width: 100%;
+    }
+
+    nav{
+        width: 32%;
+        margin-right: 220px;
+    }
+
+}
+
+
+@media only screen and (max-width: 980px) {
+
+    .navigation-bar-pc{
+        display: none;
+    }
+
+    .navigation-bar-mobile{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 1em;
+    }
+
+    .navigation-bar-mobile__mobile-nav{
+        text-align: end;
+        margin-right: 2em;
+    }
+
+    .navigation-bar__logo{
+        width: 60%;
+    }
+   
+    .navigation-bar-mobile__mobile-icon{
+        width: 25%; 
+    }
+
+    .information-section{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .products-section{
+        flex-direction: column;
+    }
+
+    .statistics-section{
+        flex-direction: column-reverse;
+    }
+
+    .statistics-section__image-container{
+        width: 100%;
+    }
+
+    .statistics-section__image{
+        width: 100%;
+    }
+
+    .team-section{
+        flex-direction: column;
+    }
+
+    .parent-pc{
+        display: none;
+    }
+
+    .parent-mobile {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        }
+        
+        .div1 { grid-area: 1 / 2 / 3 / 4; }
+        .div2 { grid-area: 3 / 2 / 5 / 3; }
+        .div3 { grid-area: 3 / 3 / 5 / 4; }
+        .div4 { grid-area: 5 / 2 / 7 / 4; }
+
+    .contact-section{
+        flex-direction: column;
+    }
+
+    .form-section{
+        width: 100%;
+    }
+
+    .links-section__list{
+        flex-direction: column;
+    }
+
+    .links-section__list li{
+        margin: 0.3em 0em 0.3em 0em;
+    }
+
+    .footer-section{
+        flex-direction: column;
+    }
+
+    .footer-section__container-contacts{
+        flex-direction: column;
+    }
+
+    .footer-section__contacts{
+        justify-content: center;
+    }
+
+    .footer-section__icon{
+        width: 8%;
+    }
+
+    .footer-section__container-contacts{
+        width: 50%;
+    }
+
+
+
 }

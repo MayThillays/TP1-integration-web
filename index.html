@@ -17,6 +17,8 @@
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Satisfy&display=swap"
         rel="stylesheet">
 
+    <script defer src="scripts/validation.js"></script>
+
 
 </head>
 
@@ -25,8 +27,9 @@
 
         <!--Navbar Large screens (PC)-->
         <div class="navigation-bar-pc">
-            <a href="index.html"><img class="navigation-bar-pc__logo" src="images/glazed-glory-logo.png"
-                    alt="logo de Glazed Glory Donuts"></a>
+            <a href="index.html"><img class="navigation-bar__logo" src="images/glazed-glory-logo.png"
+                    alt="logo de Glazed Glory Donuts">
+            </a>
             <nav>
                 <ul class="navigation-bar-pc__menu">
                     <li><a class="navigation-bar-pc__item navigation-bar-pc__item--hover" href="#products">Nos
@@ -40,6 +43,20 @@
                 </ul>
             </nav>
         </div>
+
+            <!--Navbar Small screens-->
+            <div class="navigation-bar-mobile">
+                <div class="navigation-bar-mobile__logo-section">
+                    <a href="index.html"><img class="navigation-bar__logo" src="images/glazed-glory-logo.png"
+                        alt="logo de Glazed Glory Donuts">
+                    </a>
+                </div>
+                <div class="navigation-bar-mobile__mobile-nav">
+                    <a href="#">
+                        <img class="navigation-bar-mobile__mobile-icon" src="images/mobile-menu.png" alt="menu mobile">
+                    </a>
+                </div>
+            </div>
 
 
 
@@ -61,7 +78,7 @@
 
 
         <div class="information-section">
-            <p>Des questions? des suggestions? Contactes nous ! blablaaaaaaaaaa</p>
+            <p>Des questions? des suggestions? Contactes nous ! On va être ravis de te jaser 😊</p>
             <button class="button__submit button__submit--hover">Button</button>
         </div>
 
@@ -107,13 +124,23 @@
 
             </div>
 
-            <div class="parent">
+            <!-- Grid pour la version PC -->
+            <div class="parent-pc">
                 <div class="div1"><img class="bs" src="images/0.jpg" alt=""> </div>
                 <div class="div2"><img class="bs" src="images/0.jpg" alt=""> </div>
                 <div class="div3"><img class="bs" src="images/Donut 2.jpg" alt=""> </div>
                 <div class="div4"><img class="bs" src="images/Donut 1.jpg" alt=""> </div>
                 <div class="div5"><img class="bs" src="images/Donut 1.jpg" alt=""> </div>
                 <div class="div6"><img class="bs" src="images/Donut 1.jpg" alt=""> </div>
+            </div>
+
+
+            <!-- Grid pour la version PC -->
+            <div class="parent-mobile">
+                <div class="div1"><img class="bs" src="images/0.jpg" alt=""> </div>
+                <div class="div2"><img class="bs" src="images/0.jpg" alt=""> </div>
+                <div class="div3"><img class="bs" src="images/0.jpg" alt=""> </div>
+                <div class="div4"><img class="bs" src="images/0.jpg" alt=""> </div>
             </div>
 
 
@@ -240,35 +267,35 @@
                     <p>Besoin d'informations au sujet de nos produits et services? Contactes-nous via ce formulaire ci-dessous:</p>
                 </div>
                 
-                <form id="form" action="confirmation.html" onsubmit="return validateForm()">
+                <form id="form" action="confirmation.html" onsubmit="return validateInputs()">
                     <div class="form-section__names">
                         <div class="form-section__first-name input-control">
                             <label class="form-section__hidden--labels" for="first-name">Prénom:</label><br>
                             <input type="text" id="first-name" name="first-name" placeholder="prénom"><br>
-                            <div class="errorMessage"></div>
+                            <div class="error"></div>
                         </div>
     
                         <div class="form-section__last-name input-control">
                             <label class="form-section__hidden--labels" for="last-name">Nom:</label><br>
                             <input type="text" id="last-name" name="last-name" placeholder="nom de famille"><br>
-                            <div class="errorMessage"></div>
+                            <div class="error"></div>
                         </div>
                     </div>
     
                     <div class="form-section__contact">
                         <div class="input-control">
                             <label class="form-section__hidden--labels" for="email">Courriel:</label><br>
-                            <input class="form-section__input" type="email" id="email" name="email" placeholder="courriel"><br><br>
-                            <div class="errorMessage"></div>
+                            <input class="form-section__input" type="email" id="email" name="email" placeholder="courriel"><br>
+                            <div class="error"></div>
                         </div>
     
-                        <div>
-                            <textarea class="form-section__textarea" name="comment" form="usrform" placeholder="message"></textarea><br><br>
-                            <div class="errorMessage"></div>
+                        <div class="input-control">
+                            <textarea class="form-section__textarea" id="textarea-message" name="comment" form="usrform" placeholder="message"></textarea><br>
+                            <div class="error"></div>
                         </div>
                     </div>
     
-                    <input type="submit" value="Submit">
+                    <input type="submit"></input>
                 </form>
             </div>
 
