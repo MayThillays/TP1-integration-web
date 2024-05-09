@@ -18,3 +18,15 @@
     justify-content: space-around;
     padding: 25px;
 }
+
+
+
+/*Fonctions Effets d'Hover*/
+
+@mixin hover-effectY($translateY){
+    transform: translateY($translateY);
+}
+
+@mixin hover-effectX($translateX){
+    transform: translateX($translateX);
+}

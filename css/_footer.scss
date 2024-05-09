@@ -57,10 +57,21 @@
 
 .footer-section__contacts{
     display: flex; 
-    width: 50%;
+
 }
 
 .footer-section__contacts{
     text-decoration: none;
     color: $black;
+}
+
+
+.footer-section__contacts--hover:hover{
+    transform: translate(15px);
+}
+
+
+
+.links-section__item--hover:hover{
+    transform: translate(15px);
 }

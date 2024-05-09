@@ -1,6 +1,7 @@
 
 @use 'variables' as *;
 @use 'mixins' as *; 
+@use 'classes-js' as *;
 @use 'header' as *; 
 @use 'banner' as *; 
 @use 'newsletter' as *; 
@@ -20,6 +21,8 @@
     flex-direction: column;
     margin: auto;
 }
+
+
 
 
 

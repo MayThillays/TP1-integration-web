@@ -71,10 +71,12 @@ body{
 
 .footer-section__contacts--hover:hover{
     background-color: aqua;
+    transform: translate(15px);
 }
 
 .links-section__item--hover:hover{
     background-color: aqua;
+    transform: translateY(-2.1rem);
 }
 
 .navigation-bar-pc__item--hover:hover{

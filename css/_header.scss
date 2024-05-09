@@ -6,7 +6,7 @@
 .navigation-bar-pc{
     display: flex;
     align-items: center;
-    background-color: $blue;
+
 }
 
 .navigation-bar__logo{
@@ -17,7 +17,7 @@
     display: flex;
     list-style-type: none;
     width: 150%;
-    justify-content: space-around
+    justify-content: space-around;
 }
 
 .navigation-bar-pc__item{
@@ -27,4 +27,9 @@
 
 .navigation-bar-mobile{
     display: none;
+}
+
+.navigation-bar-pc__item--hover:hover{
+    @include hover-effectY(-1.5rem);
+
 }
