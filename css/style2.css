@@ -1,0 +1,40 @@
+/* typographie*/
+/* couleurs*/
+/* classes CSS pour le javascript*/
+/* Section footer */
+.footer-section {
+  background-color: rgb(245, 152, 217);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-section__website-creator {
+  margin-left: 10px;
+}
+
+.footer-section__icon {
+  width: 18%;
+  margin-right: 10px;
+}
+
+.footer-section__container-contacts {
+  display: flex;
+  text-align: center;
+  width: 35%;
+  padding: 15px;
+  margin: 10px;
+}
+
+.footer-section__contacts {
+  display: flex;
+}
+
+.footer-section__contacts {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  background-color: #9BF3FE;
+}/*# sourceMappingURL=style2.css.map */

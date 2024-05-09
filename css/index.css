@@ -13,10 +13,9 @@ Couleurs:
 - rose: FDD4E2
 - bleu: 9BF3FE
 
-
-
-
 */
+
+
 
 h1, h2, h3, h4{
     font-family: satisfy;
@@ -180,7 +179,6 @@ body{
     width: 40%;
 }
 .products-section__image{
-    background-color: rgb(231, 180, 180);
     padding: 15px;
 }
 

@@ -1,0 +1,15 @@
+
+@use 'variables' as *;
+@use 'mixins' as *; 
+@use 'header' as *; 
+@use 'footer' as *;
+
+
+
+
+body{
+    background-color: $blue; 
+
+}
+
+
