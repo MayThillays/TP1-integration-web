@@ -1,0 +1,30 @@
+@use 'variables' as *;
+
+
+/* Barre de navigation */
+
+.navigation-bar-pc{
+    display: flex;
+    align-items: center;
+    background-color: $blue;
+}
+
+.navigation-bar__logo{
+    width: 30%;
+}
+
+.navigation-bar-pc__menu{
+    display: flex;
+    list-style-type: none;
+    width: 150%;
+    justify-content: space-around
+}
+
+.navigation-bar-pc__item{
+    display: flex;
+    text-decoration: none;
+}
+
+.navigation-bar-mobile{
+    display: none;
+}

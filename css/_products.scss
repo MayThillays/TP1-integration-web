@@ -1,0 +1,25 @@
+@use 'variables' as *;
+
+/* Section produits */
+
+.products-section{
+    display: flex;
+}
+
+.products-section__card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+.products-section__donut{
+    width: 40%;
+}
+.products-section__image{
+    padding: 15px;
+}
+
+.products-section__paragraph{
+    background-color: $pink;
+}
+

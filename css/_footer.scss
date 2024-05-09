@@ -1,8 +1,37 @@
+@use 'variables' as *;
+
+
+/* Section liste de liens */
+
+.links-section{
+    background-color: $blue;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.links-section__logo{
+    width: 10%;
+}
+
+.links-section__list{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.links-section__item {
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+
 
 /* Section footer */
 
 .footer-section{
-    background-color: rgb(245, 152, 217);
+    background-color: $pink;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -28,9 +57,10 @@
 
 .footer-section__contacts{
     display: flex; 
+    width: 50%;
 }
 
 .footer-section__contacts{
     text-decoration: none;
-    color: black;
+    color: $black;
 }

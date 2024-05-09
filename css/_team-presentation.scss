@@ -1,0 +1,15 @@
+/* Section présentation de l"équipe */
+
+.team-section{
+    display: flex;
+    justify-content: space-around;
+    padding: 25px;
+}
+
+.team-section__profiles{
+    text-align: center;
+}
+
+.team-section__photo{
+    border-radius: 100px;
+}

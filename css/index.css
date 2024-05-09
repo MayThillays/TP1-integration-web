@@ -306,7 +306,6 @@ form{
 }
 
 
-
 .form-section__input, .form-section__textarea{
     width: 98%;
 }
@@ -318,6 +317,8 @@ form{
 textarea{
     outline: none;
 }
+
+
 
 /* Section liste de liens */
 

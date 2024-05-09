@@ -1,0 +1,16 @@
+/* Section présentation statistiques */
+
+.statistics-section{
+    display: flex;
+    padding: 25px;
+
+}
+
+.statistics-section__image-container{
+    background-color: rgb(141, 161, 155);
+    width: 45%;
+}
+
+.statistics-section__text-container{
+    width: 55%;
+}

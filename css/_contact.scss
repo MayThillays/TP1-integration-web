@@ -1,0 +1,61 @@
+@use 'variables' as *;
+
+/* Section iframe de Google Map + formulaire */
+
+.contact-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Section Iframe Google Map */
+
+.contact-section__iframe{
+    display: flex;
+    width: 400%;
+}
+
+/* Section Formulaire */
+
+.form-section{
+    background-color: $pink;
+    width: 40%;
+    margin-right: 2em;
+}
+
+.form-section__paragraph{
+    margin: 2em 2em 0em 2em;
+}
+
+form{
+
+    margin: 0em 2em 2em 2em;
+}
+
+.form-section__hidden--labels{
+    display: none;
+}
+
+.form-section__names{
+    display: flex;
+}
+
+.form-section__first-name, .form-section__last-name{
+    width: 100%;
+}
+
+.form-section__names input{
+    width: 95%;
+}
+
+
+.form-section__input, .form-section__textarea{
+    width: 98%;
+}
+
+.input-control input:focus {
+    outline: 0;
+}
+
+textarea{
+    outline: none;
+}
