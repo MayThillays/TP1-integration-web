@@ -202,10 +202,15 @@
 
 .statistics-section__stats-numbers {
   display: flex;
+  font-size: 2rem;
+}
+
+.statistics-section__stats {
+  margin-right: 1.5em;
 }
 
 .statistics-section__button {
-  width: 20%;
+  width: 15%;
 }
 
 /* Section présentation de l"équipe */
