@@ -1,9 +1,14 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
 /* Section présentation de l"équipe */
 
 .team-section{
     display: flex;
     justify-content: space-around;
     padding: 25px;
+    background-color: $blue;
+
 }
 
 .team-section__profiles{
@@ -12,4 +17,10 @@
 
 .team-section__photo{
     border-radius: 100px;
+    
 }
+
+.team-section__social-media--hover:hover{
+    @include hover-effectY(-0.7rem);
+}
+

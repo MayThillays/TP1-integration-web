@@ -12,6 +12,7 @@
 @use 'team-presentation' as *;
 @use 'contact' as *;
 @use 'footer' as *;
+@use 'responsive' as *;
 
 
 
@@ -22,8 +23,14 @@
     margin: auto;
 }
 
+body{
+    font-family: $font-text;
+}
 
-
+h1, h2, h3, h4{
+    font-family: $font-title;
+    font-size: 2.5rem;
+}
 
 
 

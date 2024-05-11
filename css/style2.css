@@ -53,12 +53,8 @@
 }
 
 .navigation-bar-pc__item--hover:hover {
-  background-color: aqua;
-  transform: translateY(-1.5rem);
-}
-
-.navigation-bar-pc__item--hover:hover {
-  @includ;
+  border-bottom: 1px solid #9BF3FE;
+  padding: 0.4em;
 }
 
 /* Section carroussel-bannière */
@@ -89,6 +85,27 @@
 .information-section {
   display: flex;
   justify-content: center;
+  align-items: center;
+  background-color: #FDD4E2;
+}
+
+.button__submit {
+  background-image: linear-gradient(to right, #9BF3FE 0%, #FDD4E2 51%, #F4F4F4 100%);
+  margin: 0.4em;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #323232;
+  border-radius: 10px;
+  border: 1px solid #9BF3FE;
+  margin: 1em 1em 1em 1em;
+  padding: 1em 2em 1em 2em;
+}
+
+.button__submit:hover {
+  background-position: right center;
+  color: #323232;
+  text-decoration: none;
 }
 
 /* Section produits */
@@ -111,7 +128,7 @@
 }
 
 .products-section__paragraph {
-  background-color: #FDD4E2;
+  background-color: #9BF3FE;
 }
 
 /* Section grid d'images */
@@ -171,12 +188,24 @@
 }
 
 .statistics-section__image-container {
-  background-color: rgb(141, 161, 155);
   width: 45%;
 }
 
 .statistics-section__text-container {
   width: 55%;
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0em 3em 0em 3em;
+}
+
+.statistics-section__stats-numbers {
+  display: flex;
+}
+
+.statistics-section__button {
+  width: 20%;
 }
 
 /* Section présentation de l"équipe */
@@ -184,6 +213,7 @@
   display: flex;
   justify-content: space-around;
   padding: 25px;
+  background-color: #9BF3FE;
 }
 
 .team-section__profiles {
@@ -192,6 +222,10 @@
 
 .team-section__photo {
   border-radius: 100px;
+}
+
+.team-section__social-media--hover:hover {
+  transform: translateY(-0.7rem);
 }
 
 /* Section iframe de Google Map + formulaire */
@@ -308,16 +342,131 @@ textarea {
 }
 
 .footer-section__contacts--hover:hover {
-  transform: translate(15px);
+  transform: translateX(1rem);
 }
 
 .links-section__item--hover:hover {
-  transform: translate(15px);
+  border-bottom: 1px solid #323232;
+  padding: 0.5em;
 }
 
+.footer-section__social-media--hover:hover {
+  transform: translateY(-0.7rem);
+}
+
+/*-- MEDIA QUERIES --*/
+/*Tablettes */
+@media (min-width: 981px) and (max-width: 1200px) {
+  .navigation-bar-pc {
+    width: 100%;
+  }
+  nav {
+    width: 32%;
+    margin-right: 220px;
+  }
+}
+/*Mobiles */
+@media only screen and (max-width: 980px) {
+  .navigation-bar-pc {
+    display: none;
+  }
+  .navigation-bar-mobile {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1em;
+  }
+  .navigation-bar-mobile__mobile-nav {
+    text-align: end;
+    margin-right: 2em;
+  }
+  .navigation-bar__logo {
+    width: 60%;
+  }
+  .navigation-bar-mobile__mobile-icon {
+    width: 25%;
+  }
+  .information-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .products-section {
+    flex-direction: column;
+  }
+  .statistics-section {
+    flex-direction: column-reverse;
+  }
+  .statistics-section__image-container {
+    width: 100%;
+  }
+  .statistics-section__image {
+    width: 100%;
+  }
+  .team-section {
+    flex-direction: column;
+  }
+  .parent-pc {
+    display: none;
+  }
+  .parent-mobile {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .div1 {
+    grid-area: 1/2/3/4;
+  }
+  .div2 {
+    grid-area: 3/2/5/3;
+  }
+  .div3 {
+    grid-area: 3/3/5/4;
+  }
+  .div4 {
+    grid-area: 5/2/7/4;
+  }
+  .contact-section {
+    flex-direction: column;
+  }
+  .form-section {
+    width: 100%;
+  }
+  .links-section__list {
+    flex-direction: column;
+  }
+  .links-section__list li {
+    margin: 0.3em 0em 0.3em 0em;
+  }
+  .footer-section {
+    flex-direction: column;
+  }
+  .footer-section__container-contacts {
+    flex-direction: column;
+  }
+  .footer-section__contacts {
+    justify-content: center;
+  }
+  .footer-section__icon {
+    width: 8%;
+  }
+  .footer-section__container-contacts {
+    width: 50%;
+  }
+}
 .container1200 {
   max-width: 1200px;
   display: flex;
   flex-direction: column;
   margin: auto;
+}
+
+body {
+  font-family: lato;
+}
+
+h1, h2, h3, h4 {
+  font-family: satisfy;
+  font-size: 2.5rem;
 }/*# sourceMappingURL=style2.css.map */

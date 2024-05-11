@@ -44,19 +44,19 @@
             </nav>
         </div>
 
-            <!--Navbar Small screens-->
-            <div class="navigation-bar-mobile">
-                <div class="navigation-bar-mobile__logo-section">
-                    <a href="index.html"><img class="navigation-bar__logo" src="images/glazed-glory-logo.png"
+        <!--Navbar Small screens-->
+        <div class="navigation-bar-mobile">
+            <div class="navigation-bar-mobile__logo-section">
+                <a href="index.html"><img class="navigation-bar__logo" src="images/glazed-glory-logo.png"
                         alt="logo de Glazed Glory Donuts">
-                    </a>
-                </div>
-                <div class="navigation-bar-mobile__mobile-nav">
-                    <a href="#">
-                        <img class="navigation-bar-mobile__mobile-icon" src="images/mobile-menu.png" alt="menu mobile">
-                    </a>
-                </div>
+                </a>
             </div>
+            <div class="navigation-bar-mobile__mobile-nav">
+                <a href="#">
+                    <img class="navigation-bar-mobile__mobile-icon" src="images/mobile-menu.png" alt="menu mobile">
+                </a>
+            </div>
+        </div>
 
 
 
@@ -155,9 +155,11 @@
                 <div class="statistics-section__text-container">
                     <h2>Des Statistiques</h2>
                     <p>blablablablabla</p>
-                    <p>70% blabla</p>
-                    <p>30% blabla</p>
-                    <button>Voir plus</button>
+                    <div class="statistics-section__stats-numbers">
+                        <p>70% blabla</p>
+                        <p>30% blabla</p>
+                    </div>
+                    <button class="statistics-section__button">Voir plus</button>
                 </div>
             </div>
 
@@ -256,17 +258,18 @@
             <div>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2794.4228027475083!2d-73.628908!3d45.54181959999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91918d09111b3%3A0x2ae9b5b57637df9d!2s8045%20Drolet%20St%2C%20Montreal%2C%20QC%20H2R%202E1!5e0!3m2!1sen!2sca!4v1714253758462!5m2!1sen!2sca"
-                    class="contact-section__iframe"  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
+                    class="contact-section__iframe" width="600" height="450" style="border:0;" allowfullscreen=""
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
 
             <div class="form-section">
                 <div class="form-section__paragraph">
                     <h4>Contactes-nous!</h4>
-                    <p>Besoin d'informations au sujet de nos produits et services? Contactes-nous via ce formulaire ci-dessous:</p>
+                    <p>Besoin d'informations au sujet de nos produits et services? Contactes-nous via ce formulaire
+                        ci-dessous:</p>
                 </div>
-                
+
                 <form id="form" action="confirmation.html" onsubmit="return validateInputs()">
                     <div class="form-section__names">
                         <div class="form-section__first-name input-control">
@@ -274,27 +277,29 @@
                             <input type="text" id="first-name" name="first-name" placeholder="prénom"><br>
                             <div class="error"></div>
                         </div>
-    
+
                         <div class="form-section__last-name input-control">
                             <label class="form-section__hidden--labels" for="last-name">Nom:</label><br>
                             <input type="text" id="last-name" name="last-name" placeholder="nom de famille"><br>
                             <div class="error"></div>
                         </div>
                     </div>
-    
+
                     <div class="form-section__contact">
                         <div class="input-control">
                             <label class="form-section__hidden--labels" for="email">Courriel:</label><br>
-                            <input class="form-section__input" type="email" id="email" name="email" placeholder="courriel"><br>
+                            <input class="form-section__input" type="email" id="email" name="email"
+                                placeholder="courriel"><br>
                             <div class="error"></div>
                         </div>
-    
+
                         <div class="input-control">
-                            <textarea class="form-section__textarea" id="textarea-message" name="comment" form="usrform" placeholder="message"></textarea><br>
+                            <textarea class="form-section__textarea" id="textarea-message" name="comment" form="usrform"
+                                placeholder="message"></textarea><br>
                             <div class="error"></div>
                         </div>
                     </div>
-    
+
                     <input type="submit"></input>
                 </form>
             </div>
