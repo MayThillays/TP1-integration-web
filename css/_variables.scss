@@ -6,8 +6,15 @@ $width-container: 1200px;
 $font-title: satisfy;
 $font-text: lato; 
 
-$font-size-title: 3.5rem;
+$font-size-title: 2.5rem;
 $font-size-text: 1rem;
+
+$font-size-important-text: 2rem;
+
+/* margin - padding standards*/
+
+$margin-bottom-standard: 4em;
+$margin-top-standard: 4em;
 
 
 /* couleurs*/
@@ -16,7 +23,7 @@ $white: #F4F4F4;
 $black: #323232;
 $pink: #FDD4E2;
 $blue: #9BF3FE;
-$dark-blue : #76bbde;
+$dark-blue : #2a60c4;
 
 
 /* classes CSS pour le javascript*/

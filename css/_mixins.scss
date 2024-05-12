@@ -38,6 +38,7 @@
     padding: 0.4em;
 }
 
+/*
 @mixin gradient-button($color-btn){
     background-image: linear-gradient(to right, #9BF3FE 0%, #FDD4E2  51%, #F4F4F4  100%);
     margin: 0.4em;
@@ -48,10 +49,19 @@
     border-radius: 10px;
     border: 1px solid #9BF3FE;
 }
+*/
 
-@mixin gradient-button-hover-effect($color-text){
-        background-position: right center;
-        color: $color-text;
+@mixin gradient-button($color-btn){
+    background-color: transparent;    
+    text-align: center;
+    color: $color-btn;            
+    border-radius: 10px;
+    border: 1px solid $color-btn;
+}
+
+@mixin gradient-button-hover-effect($color-btn){
+        background-color: $color-btn;
+        color: $white;
         text-decoration: none;
 
      

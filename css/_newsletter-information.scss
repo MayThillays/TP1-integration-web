@@ -1,0 +1,45 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+/* Section newsletter */
+
+.newsletter-section{
+    display: flex;
+    flex-direction: column;
+    margin: 0em 0em 1em 0em;
+    text-align: center;
+    background-color: $pink;
+}
+
+.newsletter-section__input-button{
+    display: flex;
+    justify-content: center;
+    margin: 1em 0em 1em 0em;
+}
+
+.newsletter-section__label{
+    margin: 1em 0em 1em 0em;
+}
+
+
+/* Section information */
+
+.information-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: $margin-bottom-standard;
+
+}
+
+.button__submit{
+    @include gradient-button($dark-blue);
+    margin-left: 1.5em;
+    padding: 1em 2em 1em 2em;
+}
+
+.button__submit:hover{
+    @include gradient-button-hover-effect($dark-blue);
+
+}
+

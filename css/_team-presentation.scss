@@ -3,11 +3,16 @@
 
 /* Section présentation de l"équipe */
 
+.team-section__titles{
+    text-align: center;
+}
+
 .team-section{
     display: flex;
     justify-content: space-around;
     padding: 25px;
     background-color: $blue;
+    margin-bottom: $margin-bottom-standard;
 
 }
 

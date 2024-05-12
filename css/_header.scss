@@ -23,6 +23,7 @@
 .navigation-bar-pc__item{
     display: flex;
     text-decoration: none;
+    color: $black;
 }
 
 .navigation-bar-mobile{
@@ -30,6 +31,7 @@
 }
 
 .navigation-bar-pc__item--hover:hover{
-    @include hover-effect-underline($blue)
+    @include hover-effect-underline($black);
+ 
     
 }

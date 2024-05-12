@@ -1,8 +1,21 @@
 @charset "UTF-8";
 /* typographie*/
+/* margin - padding standards*/
 /* couleurs*/
 /* classes CSS pour le javascript*/
 /*Fonctions Effets d'Hover*/
+/*
+@mixin gradient-button($color-btn){
+    background-image: linear-gradient(to right, #9BF3FE 0%, #FDD4E2  51%, #F4F4F4  100%);
+    margin: 0.4em;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: $color-btn;            
+    border-radius: 10px;
+    border: 1px solid #9BF3FE;
+}
+*/
 /* classes CSS */
 .input-control.sucess input {
   border-color: rgb(64, 187, 7);
@@ -46,6 +59,7 @@
 .navigation-bar-pc__item {
   display: flex;
   text-decoration: none;
+  color: #323232;
 }
 
 .navigation-bar-mobile {
@@ -53,21 +67,23 @@
 }
 
 .navigation-bar-pc__item--hover:hover {
-  border-bottom: 1px solid #9BF3FE;
+  border-bottom: 1px solid #323232;
   padding: 0.4em;
 }
 
 /* Section carroussel-bannière */
 .carousel-banner__image {
   width: 100%;
+  margin-bottom: 4em;
 }
 
 /* Section newsletter */
 .newsletter-section {
   display: flex;
   flex-direction: column;
-  margin: 1em 0em 1em 0em;
+  margin: 0em 0em 1em 0em;
   text-align: center;
+  background-color: #FDD4E2;
 }
 
 .newsletter-section__input-button {
@@ -76,9 +92,8 @@
   margin: 1em 0em 1em 0em;
 }
 
-.button__submit {
-  padding: 10px;
-  margin-left: 1em;
+.newsletter-section__label {
+  margin: 1em 0em 1em 0em;
 }
 
 /* Section information */
@@ -86,31 +101,32 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #FDD4E2;
+  margin-bottom: 4em;
 }
 
 .button__submit {
-  background-image: linear-gradient(to right, #9BF3FE 0%, #FDD4E2 51%, #F4F4F4 100%);
-  margin: 0.4em;
+  background-color: transparent;
   text-align: center;
-  transition: 0.5s;
-  background-size: 200% auto;
-  color: #323232;
+  color: #2a60c4;
   border-radius: 10px;
-  border: 1px solid #9BF3FE;
-  margin: 1em 1em 1em 1em;
+  border: 1px solid #2a60c4;
+  margin-left: 1.5em;
   padding: 1em 2em 1em 2em;
 }
 
 .button__submit:hover {
-  background-position: right center;
-  color: #323232;
+  background-color: #2a60c4;
+  color: #F4F4F4;
   text-decoration: none;
 }
 
 /* Section produits */
 .products-section {
   display: flex;
+}
+
+.products-section__title {
+  text-align: center;
 }
 
 .products-section__card {
@@ -129,6 +145,7 @@
 
 .products-section__paragraph {
   background-color: #9BF3FE;
+  margin-bottom: 4em;
 }
 
 /* Section grid d'images */
@@ -136,38 +153,33 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(6, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  margin-bottom: 4em;
 }
 
 .div1 {
-  grid-area: 1/4/4/8;
-  background-color: aqua;
+  grid-area: 1/4/4/9;
 }
 
 .div2 {
-  grid-area: 4/6/7/10;
-  background-color: aqua;
+  grid-area: 4/6/7/11;
 }
 
 .div3 {
-  grid-area: 2/8/4/10;
-  background-color: rgb(233, 233, 29);
+  grid-area: 2/9/4/11;
 }
 
 .div4 {
   grid-area: 4/4/6/6;
-  background-color: blue;
 }
 
 .div5 {
   grid-area: 2/1/5/4;
-  background-color: blue;
 }
 
 .div6 {
-  grid-area: 3/10/6/12;
-  background-color: rgb(17, 165, 54);
+  grid-area: 3/11/6/13;
 }
 
 .bs {
@@ -193,7 +205,6 @@
 
 .statistics-section__text-container {
   width: 55%;
-  background-color: antiquewhite;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -210,15 +221,32 @@
 }
 
 .statistics-section__button {
-  width: 15%;
+  width: 40%;
+  background-color: transparent;
+  text-align: center;
+  color: #2a60c4;
+  border-radius: 10px;
+  border: 1px solid #2a60c4;
+  padding: 1em 0.5em 1em 0.5em;
+}
+
+.statistics-section__button:hover {
+  background-color: #2a60c4;
+  color: #F4F4F4;
+  text-decoration: none;
 }
 
 /* Section présentation de l"équipe */
+.team-section__titles {
+  text-align: center;
+}
+
 .team-section {
   display: flex;
   justify-content: space-around;
   padding: 25px;
   background-color: #9BF3FE;
+  margin-bottom: 4em;
 }
 
 .team-section__profiles {
@@ -248,16 +276,21 @@
 /* Section Formulaire */
 .form-section {
   background-color: #FDD4E2;
-  width: 40%;
+  width: 45%;
   margin-right: 2em;
+  margin-bottom: 4em;
+}
+
+h4 {
+  margin-bottom: 1em;
 }
 
 .form-section__paragraph {
-  margin: 2em 2em 0em 2em;
+  margin: -1.5em 1.5em -1em 1.5em;
 }
 
 form {
-  margin: 0em 2em 2em 2em;
+  margin: 0em 1.5em 1.5em 1.5em;
 }
 
 .form-section__hidden--labels {
@@ -269,15 +302,19 @@ form {
 }
 
 .form-section__first-name, .form-section__last-name {
-  width: 100%;
-}
-
-.form-section__names input {
   width: 95%;
 }
 
+.form-section__names input {
+  width: 90%;
+}
+
 .form-section__input, .form-section__textarea {
-  width: 98%;
+  width: 95%;
+}
+
+.form-section__textarea {
+  padding: 0.4em;
 }
 
 .input-control input:focus {
@@ -288,16 +325,41 @@ textarea {
   outline: none;
 }
 
+.form-section__button {
+  background-color: transparent;
+  text-align: center;
+  color: #2a60c4;
+  border-radius: 10px;
+  border: 1px solid #2a60c4;
+  padding: 1em 1em 1em 1em;
+}
+
+.form-section__button:hover {
+  background-color: #2a60c4;
+  color: #F4F4F4;
+  text-decoration: none;
+}
+
+#first-name, #last-name, #email {
+  padding: 0.4em;
+}
+
 /* Section liste de liens */
 .links-section {
   background-color: #9BF3FE;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+  margin-bottom: 4em;
 }
 
 .links-section__logo {
   width: 10%;
+  display: flex;
+  margin: auto;
+}
+
+.links-section__container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .links-section__list {
@@ -410,6 +472,9 @@ textarea {
   .team-section {
     flex-direction: column;
   }
+  .team-section__social-media {
+    margin-bottom: 4em;
+  }
   .parent-pc {
     display: none;
   }
@@ -441,6 +506,9 @@ textarea {
   .links-section__list {
     flex-direction: column;
   }
+  .links-section__logo {
+    width: 25%;
+  }
   .links-section__list li {
     margin: 0.3em 0em 0.3em 0em;
   }
@@ -454,7 +522,7 @@ textarea {
     justify-content: center;
   }
   .footer-section__icon {
-    width: 8%;
+    display: none;
   }
   .footer-section__container-contacts {
     width: 50%;

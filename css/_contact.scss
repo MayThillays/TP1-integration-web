@@ -1,4 +1,6 @@
 @use 'variables' as *;
+@use 'mixins' as *; 
+
 
 /* Section iframe de Google Map + formulaire */
 
@@ -18,17 +20,21 @@
 
 .form-section{
     background-color: $pink;
-    width: 40%;
+    width: 45%;
     margin-right: 2em;
+    margin-bottom: $margin-bottom-standard;
+}
+
+h4{
+    margin-bottom: 1em;
 }
 
 .form-section__paragraph{
-    margin: 2em 2em 0em 2em;
+    margin: -1.5em 1.5em -1em 1.5em;
 }
 
 form{
-
-    margin: 0em 2em 2em 2em;
+    margin: 0em 1.5em 1.5em 1.5em;
 }
 
 .form-section__hidden--labels{
@@ -40,16 +46,20 @@ form{
 }
 
 .form-section__first-name, .form-section__last-name{
-    width: 100%;
+    width: 95%;
 }
 
 .form-section__names input{
-    width: 95%;
+    width: 90%;
 }
 
 
 .form-section__input, .form-section__textarea{
-    width: 98%;
+    width: 95%;
+}
+
+.form-section__textarea{
+    padding: 0.4em;
 }
 
 .input-control input:focus {
@@ -60,4 +70,15 @@ textarea{
     outline: none;
 }
 
+.form-section__button{
+    @include gradient-button($dark-blue);
+    padding: 1em 1em 1em 1em;
+}
 
+.form-section__button:hover{
+    @include gradient-button-hover-effect($dark-blue);
+}
+
+#first-name, #last-name, #email{
+    padding: 0.4em;
+}

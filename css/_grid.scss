@@ -1,19 +1,22 @@
+@use 'variables' as *;
+
 /* Section grid d'images */
 
 .parent-pc {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    margin-bottom: $margin-bottom-standard;
     }
     
-    .div1 { grid-area: 1 / 4 / 4 / 8; background-color: aqua;}
-    .div2 { grid-area: 4 / 6 / 7 / 10; background-color: aqua;}
-    .div3 { grid-area: 2 / 8 / 4 / 10; background-color: rgb(233, 233, 29);}
-    .div4 { grid-area: 4 / 4 / 6 / 6; background-color: blue;}
-    .div5 { grid-area: 2 / 1 / 5 / 4; background-color: blue;}
-    .div6 { grid-area: 3 / 10 / 6 / 12; background-color: rgb(17, 165, 54);}
+    .div1 { grid-area: 1 / 4 / 4 / 9; }
+    .div2 { grid-area: 4 / 6 / 7 / 11; }
+    .div3 { grid-area: 2 / 9 / 4 / 11; }
+    .div4 { grid-area: 4 / 4 / 6 / 6; }
+    .div5 { grid-area: 2 / 1 / 5 / 4; }
+    .div6 { grid-area: 3 / 11 / 6 / 13; }
 
 .bs{
     grid-area: bs;

@@ -66,7 +66,7 @@
 
 
         <div class="newsletter-section">
-            <label for="email-client">Inscris-toi à notre newsletter pour découvrir nos nouveautés sucrées!</label>
+            <label class="newsletter-section__label" for="email-client">Inscris-toi à notre newsletter pour découvrir nos nouveautés sucrées!</label>
 
             <div class="newsletter-section__input-button">
                 <input type="email" id="email-client" name="email-client">
@@ -84,8 +84,10 @@
 
         <main>
             <div id="products">
-                <h1>Découvres nos donuts colorés! 🍩</h1>
-                <p>Préparés selon nos recettes véganes et avec des ingrédients 100% québecois</p>
+                <div class="products-section__title">
+                    <h1>Découvres nos donuts colorés! 🍩</h1>
+                    <p>Préparés selon nos recettes véganes et avec des ingrédients 100% québecois</p>
+                </div>
 
                 <div class="products-section">
 
@@ -126,13 +128,13 @@
 
             <!-- Grid pour la version PC -->
             <div class="parent-pc">
-                <div class="div1"><img class="bs" src="images/0.jpg" alt=""> </div>
-                <div class="div2"><img class="bs" src="images/0.jpg" alt=""> </div>
-                <div class="div3"><img class="bs" src="images/Donut 2.jpg" alt=""> </div>
-                <div class="div4"><img class="bs" src="images/Donut 1.jpg" alt=""> </div>
-                <div class="div5"><img class="bs" src="images/Donut 1.jpg" alt=""> </div>
-                <div class="div6"><img class="bs" src="images/Donut 1.jpg" alt=""> </div>
-            </div>
+                <div class="div1"><img class="bs" src="images/jacek-dudzinski-QOw69T9UThA-unsplash.jpg" alt=""></div>
+                <div class="div2"><img class="bs" src="images/donuts2.jpg" alt=""></div>
+                <div class="div3"><img class="bs" src="images/donuts1.jpg" alt=""></div>
+                <div class="div4"><img class="bs" src="images/Donut 6.jpg" alt=""></div>
+                <div class="div5"><img class="bs" src="images/Donut 1.jpg" alt=""></div>
+                <div class="div6"><img class="bs" src="images/Donut 2.jpg" alt=""></div>
+                </div>
 
 
             <!-- Grid pour la version PC -->
@@ -142,10 +144,6 @@
                 <div class="div3"><img class="bs" src="images/0.jpg" alt=""> </div>
                 <div class="div4"><img class="bs" src="images/0.jpg" alt=""> </div>
             </div>
-
-
-
-
 
             <div class="statistics-section" id="story">
                 <div class="statistics-section__image-container">
@@ -166,8 +164,10 @@
             </div>
 
             <div id="team">
-                <h3>Découvres notre équipe de feu! 🔥</h3>
-                <p>lorem ipsum blablabla</p>
+                <div class="team-section__titles">
+                    <h3>Découvres notre équipe de feu! 🔥</h3>
+                    <p>lorem ipsum blablabla</p>
+                </div>
 
                 <div class="team-section">
 
@@ -181,7 +181,7 @@
                             <p>Directrice</p>
                             <p>blablablabla</p>
                         </div>
-                        <div>
+                        <div class="team-section__social-media">
                             <a href="#"><img class="team-section__social-media--hover" src="images/facebook-icon.png"
                                     alt="facebook"></a>
                             <a href="#"><img class="team-section__social-media--hover" src="images/x-icon.png"
@@ -201,7 +201,7 @@
                             <p>Co-fondateur</p>
                             <p>blablablabla</p>
                         </div>
-                        <div>
+                        <div class="team-section__social-media">
                             <a href="#"><img class="team-section__social-media--hover" src="images/facebook-icon.png"
                                     alt="facebook"></a>
                             <a href="#"><img class="team-section__social-media--hover" src="images/x-icon.png"
@@ -221,7 +221,7 @@
                             <p>Responsable RH</p>
                             <p>blablablabla</p>
                         </div>
-                        <div>
+                        <div class="team-section__social-media">
                             <a href="#"><img class="team-section__social-media--hover" src="images/facebook-icon.png"
                                     alt="facebook"></a>
                             <a href="#"><img class="team-section__social-media--hover" src="images/x-icon.png"
@@ -241,7 +241,7 @@
                             <p>Chef produit</p>
                             <p>blablablabla</p>
                         </div>
-                        <div>
+                        <div class="team-section__social-media">
                             <a href="#"><img class="team-section__social-media--hover" src="images/facebook-icon.png"
                                     alt="facebook"></a>
                             <a href="#"><img class="team-section__social-media--hover" src="images/x-icon.png"
@@ -302,7 +302,7 @@
                         </div>
                     </div>
 
-                    <input type="submit"></input>
+                    <input class="form-section__button" type="submit"></input>
                 </form>
             </div>
 
@@ -315,7 +315,7 @@
                 <a href="index.html"><img class="links-section__logo" src="images/glazed-glory-logo.png"
                         alt="logo Glazed Glory"></a>
             </div>
-            <div>
+            <div class="links-section__container">
                 <ul class="links-section__list">
                     <li><a class="links-section__item links-section__item--hover" href="#">A propos de nous</a></li>
                     <li><a class="links-section__item links-section__item--hover" href="#">Conditions de vente</a></li>
