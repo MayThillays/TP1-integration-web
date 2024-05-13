@@ -462,6 +462,10 @@ textarea {
   }
   .statistics-section {
     flex-direction: column-reverse;
+    align-items: center;
+  }
+  .statistics-section__text-container {
+    align-items: center;
   }
   .statistics-section__image-container {
     width: 100%;
@@ -482,8 +486,8 @@ textarea {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
   }
   .div1 {
     grid-area: 1/2/3/4;
