@@ -23,7 +23,11 @@
 
 .statistics-section__stats-numbers{
     display: flex; 
-    font-size: $font-size-important-text;
+    font-size: $font-size-important-intermediary;
+}
+
+span{
+    font-size: $font-size-text;
 }
 
 .statistics-section__stats{

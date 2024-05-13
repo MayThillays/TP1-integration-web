@@ -13,7 +13,6 @@
     padding: 25px;
     background-color: $blue;
     margin-bottom: $margin-bottom-standard;
-
 }
 
 .team-section__profiles{
@@ -22,7 +21,11 @@
 
 .team-section__photo{
     border-radius: 100px;
-    
+}
+
+.team-section__name{
+    font-size: $font-size-important-standard;
+    font-weight: $font-weight-standard;
 }
 
 .team-section__social-media--hover:hover{

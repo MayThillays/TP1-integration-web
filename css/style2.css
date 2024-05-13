@@ -43,6 +43,8 @@
 .navigation-bar-pc {
   display: flex;
   align-items: center;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 .navigation-bar__logo {
@@ -107,15 +109,15 @@
 .button__submit {
   background-color: transparent;
   text-align: center;
-  color: #2a60c4;
+  color: #1f468f;
   border-radius: 10px;
-  border: 1px solid #2a60c4;
+  border: 1px solid #1f468f;
   margin-left: 1.5em;
   padding: 1em 2em 1em 2em;
 }
 
 .button__submit:hover {
-  background-color: #2a60c4;
+  background-color: #1f468f;
   color: #F4F4F4;
   text-decoration: none;
 }
@@ -133,6 +135,11 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+
+.products-section__header {
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 .products-section__donut {
@@ -217,6 +224,10 @@
   font-size: 2rem;
 }
 
+span {
+  font-size: 1rem;
+}
+
 .statistics-section__stats {
   margin-right: 1.5em;
 }
@@ -225,14 +236,14 @@
   width: 40%;
   background-color: transparent;
   text-align: center;
-  color: #2a60c4;
+  color: #1f468f;
   border-radius: 10px;
-  border: 1px solid #2a60c4;
+  border: 1px solid #1f468f;
   padding: 1em 0.5em 1em 0.5em;
 }
 
 .statistics-section__button:hover {
-  background-color: #2a60c4;
+  background-color: #1f468f;
   color: #F4F4F4;
   text-decoration: none;
 }
@@ -256,6 +267,11 @@
 
 .team-section__photo {
   border-radius: 100px;
+}
+
+.team-section__name {
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 .team-section__social-media--hover:hover {
@@ -329,14 +345,14 @@ textarea {
 .form-section__button {
   background-color: transparent;
   text-align: center;
-  color: #2a60c4;
+  color: #1f468f;
   border-radius: 10px;
-  border: 1px solid #2a60c4;
+  border: 1px solid #1f468f;
   padding: 1em 1em 1em 1em;
 }
 
 .form-section__button:hover {
-  background-color: #2a60c4;
+  background-color: #1f468f;
   color: #F4F4F4;
   text-decoration: none;
 }
@@ -547,4 +563,17 @@ body {
 h1, h2, h3, h4 {
   font-family: satisfy;
   font-size: 2.5rem;
+}
+
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
 }/*# sourceMappingURL=style2.css.map */
