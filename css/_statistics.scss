@@ -6,7 +6,6 @@
 .statistics-section{
     display: flex;
     padding: 25px;
-
 }
 
 .statistics-section__image-container{
@@ -35,13 +34,13 @@ span{
 }
 
 .statistics-section__button{
+    @extend .button-style;
     width: 40%;
-    @include gradient-button($dark-blue);
     padding: 1em 0.5em 1em 0.5em;
 }
 
-.statistics-section__button:hover{
-    @include gradient-button-hover-effect($dark-blue);
+.statistics-section__button--hover:hover{
+    @extend .button-style-hover-effect;
 }
 
 

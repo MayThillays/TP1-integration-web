@@ -80,7 +80,7 @@
 
 
 .links-section__item--hover:hover{
-    border-bottom: 1px solid $black;
+    @include hover-effect-underline($black);
     padding: 0.5em;
  }
 

@@ -33,7 +33,5 @@
 }
 
 .navigation-bar-pc__item--hover:hover{
-    @include hover-effect-underline($black);
- 
-    
+    @include hover-effect-underline($dark-blue);
 }

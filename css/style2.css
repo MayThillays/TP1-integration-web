@@ -3,19 +3,22 @@
 /* margin - padding standards*/
 /* couleurs*/
 /* classes CSS pour le javascript*/
-/*Fonctions Effets d'Hover*/
-/*
-@mixin gradient-button($color-btn){
-    background-image: linear-gradient(to right, #9BF3FE 0%, #FDD4E2  51%, #F4F4F4  100%);
-    margin: 0.4em;
-    text-align: center;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: $color-btn;            
-    border-radius: 10px;
-    border: 1px solid #9BF3FE;
+/* Style des bouttons + hover*/
+.button-style, .form-section__button, .statistics-section__button, .button__submit {
+  background-color: transparent;
+  text-align: center;
+  color: #1f468f;
+  border-radius: 10px;
+  border: 1px solid #1f468f;
 }
-*/
+
+.button-style-hover-effect, .form-section__button--hover:hover, .statistics-section__button--hover:hover, .button__submit--hover:hover {
+  background-color: #1f468f;
+  color: #F4F4F4;
+  text-decoration: none;
+}
+
+/*Fonctions Effets d'Hover*/
 /* classes CSS */
 .input-control.sucess input {
   border-color: rgb(64, 187, 7);
@@ -69,7 +72,7 @@
 }
 
 .navigation-bar-pc__item--hover:hover {
-  border-bottom: 1px solid #323232;
+  border-bottom: 1px solid #1f468f;
   padding: 0.4em;
 }
 
@@ -107,19 +110,8 @@
 }
 
 .button__submit {
-  background-color: transparent;
-  text-align: center;
-  color: #1f468f;
-  border-radius: 10px;
-  border: 1px solid #1f468f;
   margin-left: 1.5em;
   padding: 1em 2em 1em 2em;
-}
-
-.button__submit:hover {
-  background-color: #1f468f;
-  color: #F4F4F4;
-  text-decoration: none;
 }
 
 /* Section produits */
@@ -157,7 +149,7 @@
 }
 
 /* Section grid d'images */
-.parent-pc {
+.grid-container-pc {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(6, 1fr);
@@ -190,14 +182,14 @@
   grid-area: 3/11/6/13;
 }
 
-.bs {
+.grid-container__img {
   grid-area: bs;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.parent-mobile {
+.grid-container-mobile {
   display: none;
 }
 
@@ -234,18 +226,7 @@ span {
 
 .statistics-section__button {
   width: 40%;
-  background-color: transparent;
-  text-align: center;
-  color: #1f468f;
-  border-radius: 10px;
-  border: 1px solid #1f468f;
   padding: 1em 0.5em 1em 0.5em;
-}
-
-.statistics-section__button:hover {
-  background-color: #1f468f;
-  color: #F4F4F4;
-  text-decoration: none;
 }
 
 /* Section présentation de l"équipe */
@@ -343,18 +324,7 @@ textarea {
 }
 
 .form-section__button {
-  background-color: transparent;
-  text-align: center;
-  color: #1f468f;
-  border-radius: 10px;
-  border: 1px solid #1f468f;
   padding: 1em 1em 1em 1em;
-}
-
-.form-section__button:hover {
-  background-color: #1f468f;
-  color: #F4F4F4;
-  text-decoration: none;
 }
 
 #first-name, #last-name, #email {
@@ -431,6 +401,7 @@ textarea {
 
 .links-section__item--hover:hover {
   border-bottom: 1px solid #323232;
+  padding: 0.4em;
   padding: 0.5em;
 }
 
@@ -499,7 +470,7 @@ textarea {
   .parent-pc {
     display: none;
   }
-  .parent-mobile {
+  .grid-container-pc {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(6, 1fr);

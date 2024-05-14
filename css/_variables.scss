@@ -32,3 +32,19 @@ $dark-blue : #1f468f;
 
 
 /* classes CSS pour le javascript*/
+
+/* Style des bouttons + hover*/
+
+.button-style{
+    background-color: transparent;    
+    text-align: center;
+    color: $dark-blue;            
+    border-radius: 10px;
+    border: 1px solid $dark-blue
+}
+
+.button-style-hover-effect{
+    background-color: $dark-blue;
+    color: $white;
+    text-decoration: none; 
+}

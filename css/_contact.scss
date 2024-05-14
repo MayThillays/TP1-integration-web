@@ -71,12 +71,12 @@ textarea{
 }
 
 .form-section__button{
-    @include gradient-button($dark-blue);
+    @extend .button-style;
     padding: 1em 1em 1em 1em;
 }
 
-.form-section__button:hover{
-    @include gradient-button-hover-effect($dark-blue);
+.form-section__button--hover:hover{
+    @extend .button-style-hover-effect;
 }
 
 #first-name, #last-name, #email{
