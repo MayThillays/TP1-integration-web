@@ -1,23 +1,26 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
 /* classes CSS */
 
 .input-control.sucess input{
-    border-color: rgb(64, 187, 7);
+    border-color: $green;
 }
 
 .input-control.error input{
-    border-color: rgb(236, 84, 57);
+    border-color: $red;
 }
 
 .input-control .error{
-    color: rgb(236, 84, 57);
+    color: $red;
     font-size: 0.9em;
     height: 20px;
 }
 
 .input-control.sucess textarea {
-    border: 3px solid rgb(64, 187, 7);
+    @include textarea($green);
 }
 
 .input-control.error textarea {
-    border: 3px solid rgb(236, 84, 57);
+    @include textarea($red);
 }

@@ -18,6 +18,9 @@
     padding: 0.4em;
 }
 
+@mixin textarea($color){
+    border: 3px solid $color;
+}
 
 
 

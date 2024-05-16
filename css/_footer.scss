@@ -7,12 +7,12 @@
 .links-section{
     background-color: $blue;
     margin-bottom: $margin-bottom-standard;
-}
 
-.links-section__logo{
-    width: 10%;
-    display: flex;
-    margin: auto;
+    .links-section__logo{
+        width: 10%;
+        display: flex;
+        margin: auto;
+    }
 }
 
 .links-section__container{
@@ -33,8 +33,6 @@
     color: black;
 }
 
-
-
 /* Section footer */
 
 .footer-section{
@@ -47,7 +45,6 @@
 .footer-section__website-creator{
     margin-left: 10px;
 }
-
 
 .footer-section__icon{
     width: 18%;
@@ -64,7 +61,6 @@
 
 .footer-section__contacts{
     display: flex; 
-
 }
 
 .footer-section__contacts{
@@ -72,18 +68,14 @@
     color: $black;
 }
 
-
 .footer-section__contacts--hover:hover{
     @include hover-effectX(1rem);
 }
-
-
 
 .links-section__item--hover:hover{
     @include hover-effect-underline($black);
     padding: 0.5em;
  }
-
 
 .footer-section__social-media--hover:hover {
     @include hover-effectY(-0.7rem);

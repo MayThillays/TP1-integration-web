@@ -11,12 +11,12 @@
     margin-bottom: $margin-bottom-standard;
     }
     
-    .div1 { grid-area: 1 / 4 / 4 / 9; }
-    .div2 { grid-area: 4 / 6 / 7 / 11; }
-    .div3 { grid-area: 2 / 9 / 4 / 11; }
-    .div4 { grid-area: 4 / 4 / 6 / 6; }
-    .div5 { grid-area: 2 / 1 / 5 / 4; }
-    .div6 { grid-area: 3 / 11 / 6 / 13; }
+    .grid-container__item1 { grid-area: 1 / 4 / 4 / 9; }
+    .grid-container__item2 { grid-area: 4 / 6 / 7 / 11; }
+    .grid-container__item3 { grid-area: 2 / 9 / 4 / 11; }
+    .grid-container__item4 { grid-area: 4 / 4 / 6 / 6; }
+    .grid-container__item5 { grid-area: 2 / 1 / 5 / 4; }
+    .grid-container__item6 { grid-area: 3 / 11 / 6 / 13; }
 
 .grid-container__img{
     grid-area: bs;

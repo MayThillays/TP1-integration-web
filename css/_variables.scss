@@ -12,8 +12,6 @@ $font-size-text: 1rem;
 $font-size-important-standard: 1.5rem;
 $font-size-important-intermediary: 2rem;
 
-$font-size-navbar: 1rem;
-
 $font-weight-standard: 500;
 
 /* margin - padding standards*/
@@ -29,9 +27,13 @@ $black: #323232;
 $pink: #FDD4E2;
 $blue: #9BF3FE;
 $dark-blue : #1f468f;
+$green: #40BB07;
+$red: #EC5439;
 
 
 /* classes CSS pour le javascript*/
+
+
 
 /* Style des bouttons + hover*/
 
@@ -40,7 +42,7 @@ $dark-blue : #1f468f;
     text-align: center;
     color: $dark-blue;            
     border-radius: 10px;
-    border: 1px solid $dark-blue
+    border: 1px solid $dark-blue;
 }
 
 .button-style-hover-effect{

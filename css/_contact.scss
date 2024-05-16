@@ -45,7 +45,7 @@ form{
     display: flex;
 }
 
-.form-section__first-name, .form-section__last-name{
+.form-section__first-name, .form-section__last-name, .form-section__input, .form-section__textarea{
     width: 95%;
 }
 
@@ -53,12 +53,7 @@ form{
     width: 90%;
 }
 
-
-.form-section__input, .form-section__textarea{
-    width: 95%;
-}
-
-.form-section__textarea{
+.form-section__textarea, #first-name, #last-name, #email{
     padding: 0.4em;
 }
 
@@ -79,6 +74,3 @@ textarea{
     @extend .button-style-hover-effect;
 }
 
-#first-name, #last-name, #email{
-    padding: 0.4em;
-}
